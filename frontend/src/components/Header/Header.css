@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+}
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 56px;
+    box-shadow: 0 4px 6px #0000001a;
+    background-color: #fff;
+    z-index: 100;
+}
+.header-container{
+    padding: 0 4rem ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-container .logo{
+    color: rgb(29, 28, 28);
+    font-size: 27px;
+    font-weight: 700;
+}
+.header-container nav{
+    display: flex;
+    align-items: center;
+    gap: 10px   ;
+}
+.header-container nav .login-btn{
+    color: rgb(43, 40, 40);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px 10px;
+    margin-right: 10px;
+    transition: all .2s ease-in-out;
+    border-radius: 4px;
+
+
+}
+.login-btn:hover{
+    background-color: rgb(194, 197, 197);
+    padding: 10px;
+}
+.header-container nav .register-btn{
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #449a4a;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #449a4a;
+    transition: all .2s ease-in-out;
+}
+.header-container nav .register-btn:hover{
+    color: #fff;
+    background-color: #449a4a ;
+}
+.profile-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.header-container .logout-btn{
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff0000;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ff0000;
+    transition: all .2s ease-in-out;
+    margin-right: 20px;
+
+}
+.header-container .logout-btn:hover{
+    color: #fff;
+    background-color: #ff0000 ;
+}
+.header-container .menu{
+    display: none;
+}
+
+@media(max-width:425px){
+    .header-container{
+        padding: 0 1rem ;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+    }
+    .header-container .menu{
+        display: block;
+        font-size: 20px;
+    }
+    .header-container nav .login-btn{
+      display: none;
+    }
+}

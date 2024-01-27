@@ -1,0 +1,15 @@
+.bookmarks-container{
+    width: 75%;
+    height: max-content;
+    margin: 60px auto;
+
+}
+.bookmarks-container h1{
+    font-size: 27px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.bookmarks-container .bookmarks-posts{
+    padding-top: 10px;  
+        
+}

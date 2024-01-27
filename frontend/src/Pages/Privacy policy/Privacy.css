@@ -1,0 +1,37 @@
+.privacy-container{
+    width: 75%;
+    height: max-content;
+    margin:56px auto 10px auto;
+
+}
+.privacy-container h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 13px 0;
+    
+}
+.privacy-container .privacy-date{
+    font-weight: 600;
+    font-size: 17px;
+}
+.privacy-container .privacy-para{
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 400;
+}
+ .privacy-info .info-head{
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 5px;
+}
+.privacy-info .info-para{
+    font-size: 18px;
+    padding-left: 27px ;
+    margin-top: 3px;
+}
+.privacy-container h3{
+    text-align: center;
+    padding: 10px 0;
+    color: rgb(3, 100, 64);
+    font-weight: 700;
+}

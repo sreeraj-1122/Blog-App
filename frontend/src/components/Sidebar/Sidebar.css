@@ -1,0 +1,90 @@
+.sidebar-container{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10px;
+
+}
+.login-components{
+    border: 1px solid rgb(231, 228, 228);
+    padding: 20px;
+    background-color: rgb(250, 250, 250);
+}
+.login-components .sidebar-heading{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.login-components .sidebar-para{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(105, 105, 105);
+    margin-bottom: 18px;
+
+}
+.login-components .sidebar-login{
+    padding: 7px 15px;
+    background-color:  #449a4a;
+    color: azure;
+    border-radius: 4px;
+    transition: .4s ease;
+}
+.login-components .sidebar-login:hover{
+    background-color: gray;
+}
+.sidebar-nav{
+    margin-top: 20px;
+}
+.sidebar-nav .nav-items{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+    /* transition: .2s ease-in-out; */
+    border-radius: 4px;
+    padding:11px 10px;
+    cursor: pointer;
+}
+.nav-items .nav-icon{
+    font-size: 17px;
+    color: black;
+
+}
+.nav-items .nav-name{
+    color: rgb(97, 97, 97);
+    font-weight: 600;
+}
+.nav-items:hover .nav-icon{
+    color: rgb(50, 50, 50);
+    
+}
+.nav-items:hover .nav-name{
+    color: rgb(50, 50, 50);
+    
+}
+.nav-items:hover{
+    background-color: #b4b4b4;
+}
+
+.sidebar-socials .sidebar-icon:hover{
+    background-color: #6af3c1;
+    
+}
+.sidebar-footer{
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+.sidebar-footer p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.1;
+    color: #b0b0b0;
+}
+.sidebar-footer p span{
+    color: #449a4a;
+}
+@media(max-width:425px){
+
+
+}

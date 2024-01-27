@@ -1,0 +1,138 @@
+.profile-container {
+    width: 80%;
+    min-height: 100vh;
+    margin: 60px auto;
+}
+
+.main-profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.main-profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.main-profile button {
+    padding: 7px 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: .15s ease-in;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.main-profile button:hover {
+    background-color: #316a35;
+}
+.profile-container .profile-name{
+    color: rgb(1, 62, 70);
+    /* margin-bottom: 30px; */
+    font-size: 30px;
+    padding-left: 17px;
+}
+.my-posts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 30px;
+}
+.my-posts h4{
+    font-size: 30px;
+    color: rgb(39, 38, 38);
+}
+.profile-line{
+   margin: 10px;
+    font-weight: 600;
+    background-color: gray;
+    height: 2px;
+}
+.profile-posts{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px;
+    padding: 3px 10px;
+    height: max-content;
+    margin-bottom: 10px;
+
+}
+.profile-posts .left-post{
+    width: 750px;
+}
+ .left-post .post-name{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    
+}
+.left-post .post-date{
+    padding-top: 30px;
+    color: rgb(24, 21, 21);
+    font-weight: 500;
+}
+.right-post{
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+}
+.right-post img{
+    width: 100px;
+    height: 100px;
+}
+.right-post .post-icon{
+    font-size: 23px;
+    color: rgb(48, 47, 47);
+}
+.post-icon .delete-icon{
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+.edit-icon:hover{
+    color: #06bb64;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.delete-icon:hover{
+    color: #f50000;
+    font-weight: 600;
+}
+.social{
+    display: flex;
+    gap:19px;
+    margin-left: 18px;
+    align-items: center;
+    margin-bottom: 19px;
+}
+.social a{
+    color: #001a0b;
+    font-size: 23px;
+    border: 1px solid gray;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: .2s ease-in;
+
+}
+.social a:hover{
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+}
+.profile-container .bio{
+    font-size: 16px;
+    color: #393a3a;
+    font-weight: 500;
+    padding-left: 18px;
+}

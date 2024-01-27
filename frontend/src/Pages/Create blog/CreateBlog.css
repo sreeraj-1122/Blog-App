@@ -1,0 +1,44 @@
+.create-blog-container {
+    margin-top: 56px;
+    min-height: calc(100vh - 56px);
+   padding: 30px;
+}
+.create-blog-container h1{
+    margin:0 30px;
+    font-size: 26px;
+}
+.create-blog-container form{
+    margin:0 30px;
+    margin-top: 19px;
+  
+
+}
+.create-blog-container form .blog-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+}
+.blog-inputs label{
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(37, 37, 37);
+    margin-top: 10px;
+}
+.blog-inputs input{
+    padding: 7px 15px;
+    font-size: 17px;
+    border: 1px solid gray;
+}
+
+.create-blog-container button{
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+    background-color:  #449749;
+    border: none;
+    outline: none;
+}
