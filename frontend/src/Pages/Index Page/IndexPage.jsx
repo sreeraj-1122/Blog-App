@@ -27,9 +27,12 @@ function IndexPage() {
   return (
     <div className="main-home">
       
-    <div className={`my-element ${toggle ? 'active' : ''}`}>
+    {/* <div className={`my-element ${toggle ? 'active' : ''}`}> */}
+    <div className="side-menu">
     <Sidebar />
-    </div >
+
+    </div>
+    {/* </div > */}
       {loading ? (
         <Loader loading={loading} />
       ) : (

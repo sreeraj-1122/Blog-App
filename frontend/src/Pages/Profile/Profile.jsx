@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { BiSolidEdit } from "react-icons/bi";
 import "./Profile.css";
+import { format, formatISO9075 } from "date-fns";
+
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { baseUrl } from "../../config/BaseUrl";
@@ -13,6 +15,10 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
 import { DataContext } from "../../context/DataContext";
 import Loader from "../../components/loader/Loader";
+function isValidDate(dateString) {
+  const date = new Date(dateString);
+  return !isNaN(date.getTime());
+}
 function Profile() {
   const { enqueueSnackbar } = useSnackbar();
   const [img, setImg] = useState(
@@ -147,7 +153,9 @@ function Profile() {
               <div key={post._id} className="profile-posts shadow">
                 <div className="left-post">
                   <div className="post-name">{post.title}</div>
-                  <div className="post-date">{post.createdAt}</div>
+                  <div className="post-date">{isValidDate(post.createdAt)
+    ? formatISO9075(new Date(post.createdAt))
+    : "Invalid Date"}</div>
                   {/* Add other post details like date if available */}
                 </div>
                 <div className="right-post">

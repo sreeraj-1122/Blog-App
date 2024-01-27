@@ -16,6 +16,7 @@
     font-weight: 700;
     font-size: 37px;
     color: rgb(19, 18, 18);
+    
 }
 .details-container .blog-img{
     width: 860px;
@@ -65,4 +66,26 @@
     font-size: 18px;
     color: rgb(46, 43, 43);
     cursor: pointer;
+}
+@media(max-width:425px){
+    .details-container h1{
+        text-align: center;
+        margin: 20px ;
+        font-weight: 700;
+        font-size: 23px;
+        color: rgb(19, 18, 18);
+    } 
+    .details-container {
+        /* width: 100%; */
+        min-height: 100vh;
+        padding: 0 7px;
+        width: 85%;
+        margin: 56px auto;
+    }
+    .details-container .blog-img{
+        width: 360px;
+        height: 260px;
+        margin-bottom: 30px;
+        object-fit: fill;
+    }
 }

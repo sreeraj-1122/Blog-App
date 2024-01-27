@@ -1,13 +1,15 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import '../../Pages/Index Page/IndexPage.css'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { DataContext } from "../../context/DataContext";
 import axios from "axios";
 import { baseUrl } from "../../config/BaseUrl";
 import Sidebar from "../Sidebar/Sidebar";
 function Header() {
-  const { userId,  isLoggedIn,token,toggle,setToggle } = useContext(DataContext);
+  const { userId, isLoggedIn, token, toggle, setToggle } =
+    useContext(DataContext);
   const [user, setUser] = useState([]);
   const [userPost, setUserPost] = useState([]);
 
@@ -15,55 +17,56 @@ function Header() {
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmST7lbuieRgVQMkB35mMjIOQw5_d2V84WeZMax6O63VpPB4ZpQNfVZecOIxkCAvzUYM&usqp=CAU"
   );
   const getUser = async () => {
-   await axios.get(baseUrl + "/user/" + userId,
-    {
-      headers: {
-        "Content-Type": "multipart/form-data",
-        Authorization: "Bearer " + token, 
-      },
-    }
-    ).then((response) => {
-      setUser(response.data);
-      console.log(response.data);
-    });
-  };
-  const getUserpost = async () => {
-    axios
-      .get(baseUrl + "/users/" + id,
-      {
+    await axios
+      .get(baseUrl + "/user/" + userId, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: "Bearer " + token,
         },
-      }
-      )
+      })
+      .then((response) => {
+        setUser(response.data);
+        console.log(response.data);
+      });
+  };
+  const getUserpost = async () => {
+    axios
+      .get(baseUrl + "/users/" + id, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+          Authorization: "Bearer " + token,
+        },
+      })
       .then((response) => {
         setUserPost(response.data);
-      setLoading(false);
-
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
-    setLoading(false);
-
+        setLoading(false);
       });
   };
   useEffect(() => {
     getUser();
-    getUserpost()
+    getUserpost();
   }, []);
 
   return (
     <header className="main-header">
-     
       <div className="header-container">
-        <span className="menu">
-          <GiHamburgerMenu onClick={()=>setToggle(!toggle)}/>
+        <span className="left-head">
+          <GiHamburgerMenu
+            onClick={() => setToggle(!toggle)}
+            className="menu"
+          />
+          <Link to="/" className="logo">
+            MyBlog
+          </Link>
         </span>
-      
-        <Link to="/" className="logo">
-          MyBlog
-        </Link>
+        <div className={`my-element ${toggle ? "active" : ""}`}>
+          <Sidebar />
+        </div>
+
         <nav>
           {isLoggedIn ? (
             <>
@@ -73,8 +76,9 @@ function Header() {
 
               <Link to={`/profile/${userId}`}>
                 <img
-                          src={user.profile ? "http://localhost:5000/" + user.profile : img}
-
+                  src={
+                    user.profile ? "http://localhost:5000/" + user.profile : img
+                  }
                   alt=""
                   className="profile-img"
                 />
@@ -92,7 +96,6 @@ function Header() {
           )}
         </nav>
       </div>
-      
     </header>
   );
 }

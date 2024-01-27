@@ -136,3 +136,48 @@
     font-weight: 500;
     padding-left: 18px;
 }
+@media(max-width:425px){
+    .main-profile img {
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        margin-bottom: 15px;
+    }
+    .profile-container {
+       
+        margin: 60px 15px;
+    }
+    .profile-posts{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 10px;
+        padding: 3px 10px;
+        height: max-content;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .profile-posts .left-post{
+        width: 750px;
+    }
+     .left-post .post-name{
+        font-size: 17px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .left-post .post-date{
+        padding-top: 10px;
+        color: rgb(24, 21, 21);
+        font-weight: 500;
+    }
+    .right-post{
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .right-post .post-icon{
+        font-size: 23px;
+        color: rgb(48, 47, 47);
+        align-self: flex-end;
+    }
+    
+}

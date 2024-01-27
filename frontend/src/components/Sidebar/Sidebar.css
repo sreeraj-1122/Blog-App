@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     padding-top: 10px;
-
+    z-index: 200;
 }
 .login-components{
     border: 1px solid rgb(231, 228, 228);

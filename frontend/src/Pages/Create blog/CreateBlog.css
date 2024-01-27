@@ -42,3 +42,10 @@
     border: none;
     outline: none;
 }
+@media(max-width:425px){
+    .create-blog-container {
+        margin-top: 56px;
+        min-height: calc(100vh - 56px);
+       padding:20px 5px;
+    }
+}
