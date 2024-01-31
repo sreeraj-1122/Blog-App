@@ -66,13 +66,13 @@ function Sidebar() {
           {" "}
           <MdEmail className="text-black fs-4 me-4 ms-2 sidebar-icon  " />
         </a>
-        <a href="www.google.com" target="_blank">
+        <a href="https://www.instagram.com/" target="_blank">
           <RiInstagramFill className="text-black fs-4 me-4 sidebar-icon" />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/sree-raj-b02070272" target="_blank">
           <FaLinkedin className="text-black fs-4 me-4 sidebar-icon" />
         </a>
-        <a href="">
+        <a href="https://github.com/sreeraj-1122" target="_blank">
           <FaGithubSquare className="text-black fs-4 sidebar-icon" />
         </a>
       </div>

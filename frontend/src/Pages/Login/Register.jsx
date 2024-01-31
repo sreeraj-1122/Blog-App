@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./Login.css";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import signApi from "../../api/register";
 import { useSnackbar } from "notistack";

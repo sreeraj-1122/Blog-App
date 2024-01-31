@@ -13,9 +13,9 @@ import Privacy from "./Pages/Privacy policy/Privacy";
 import Logout from "./Pages/LogOut/Logout";
 import Privateroute from "./Privateroute/Privateroute";
 import Editpost from "./Pages/Create blog/Editpost";
+import Error from "./Pages/Error page/Error";
 
 const App = () => {
-  
   return (
     <div>
       <BrowserRouter>
@@ -34,6 +34,7 @@ const App = () => {
           <Route path="/details/:id" element={<BlogDetails />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </div>

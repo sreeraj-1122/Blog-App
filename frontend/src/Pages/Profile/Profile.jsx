@@ -120,21 +120,21 @@ function Profile() {
             {user.linkdin === "" ? (
               ""
             ) : (
-              <a href={user.linkdin}>
+              <a href={user.linkdin} target="_blank">
                 <FaLinkedin />
               </a>
             )}
             {user.insta === "" ? (
               ""
             ) : (
-              <a href={user.insta}>
+              <a href={user.insta} target="_blank">
                 <RiInstagramFill />
               </a>
             )}
             {user.yt === "" ? (
               ""
             ) : (
-              <a href={user.yt}>
+              <a href={user.yt} target="_blank">
                 <FaYoutube />
               </a>
             )}

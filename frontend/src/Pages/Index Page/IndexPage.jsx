@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import Post from "../../components/Posts/Post";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import "./IndexPage.css";
 import Singlepost from "../../components/Singlepost/Singlepost";

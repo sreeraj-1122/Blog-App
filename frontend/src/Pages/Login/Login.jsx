@@ -4,11 +4,9 @@ import { useNavigate } from "react-router-dom";
 import loginApi from "../../api/Auth";
 import { DataContext } from "../../context/DataContext";
 import { useSnackbar } from "notistack";
-import Loader from "../../components/loader/Loader";
 
 function Login() {
   const { enqueueSnackbar } = useSnackbar();
-  // const [loading, setLoading] = useState([]);
 
   const { storeTokenInLs, storeIdInLs } = useContext(DataContext);
   const navigate = useNavigate();
@@ -25,26 +23,21 @@ function Login() {
       [name]: value,
     });
   };
-  // useEffect(()=>{
-  //   handleSubmit();
-  // },[])
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const result = await loginApi(user);
-
       const userToken = result.data.Token;
       if (result.status === 200 && userToken) {
         const res_data = await result;
         storeTokenInLs(res_data.data.Token);
         storeIdInLs(res_data.data.userExist._id);
-        // setLoading(false);
-
+        
         navigate("/");
         enqueueSnackbar("Login successful", { variant: "success" });
         window.location.reload();
       } else {
-        // setLoading(false);
 
         enqueueSnackbar("email and password does not match", {
           variant: "error",
@@ -53,7 +46,6 @@ function Login() {
     } catch (error) {
       console.log(error);
       enqueueSnackbar("Something Went Wrong", { variant: "error" });
-      // setLoading(false);
     }
   };
   return (

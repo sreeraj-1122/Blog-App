@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
-import Singlepost from "../Singlepost/Singlepost";
+// import React, { useEffect, useState } from "react";
+// import Singlepost from "../Singlepost/Singlepost";
 
 
-function Post() {
+// function Post() {
   
-  return (
-    <div>
+//   return (
+//     <div>
      
-      <Singlepost />
+//       <Singlepost />
       
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
-export default Post;
+// export default Post;

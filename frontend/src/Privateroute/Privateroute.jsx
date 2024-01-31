@@ -4,7 +4,6 @@ import { Navigate, Outlet } from "react-router-dom";
 
 const Privateroute = () => {
   const { isLoggedIn } = useContext(DataContext);
-  console.log(isLoggedIn);
   if (!isLoggedIn) {
     return <Navigate to="/" />;
   }

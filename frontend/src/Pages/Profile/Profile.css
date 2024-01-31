@@ -61,12 +61,16 @@
     justify-content: space-between;
     margin: 5px 20px;
     padding: 3px 10px;
-    height: max-content;
+    height: 150px;
+
     margin-bottom: 10px;
 
 }
 .profile-posts .left-post{
     width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
  .left-post .post-name{
     font-size: 24px;
@@ -75,7 +79,6 @@
     
 }
 .left-post .post-date{
-    padding-top: 30px;
     color: rgb(24, 21, 21);
     font-weight: 500;
 }
@@ -83,10 +86,11 @@
     display: flex;
     gap: 30px;
     align-items: flex-end;
+    /* height: 130px;    */
 }
 .right-post img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 100%;
 }
 .right-post .post-icon{
     font-size: 23px;
@@ -124,11 +128,13 @@
     align-items: center;
     border-radius: 50px;
     transition: .2s ease-in;
+    cursor: pointer;
 
 }
 .social a:hover{
-    background-color: rgb(39, 39, 39);
-    color: #fff;
+    border:1px solid #06bb64;
+    background-color: #b1e1c5;
+    /* color: #fff; */
 }
 .profile-container .bio{
     font-size: 16px;
